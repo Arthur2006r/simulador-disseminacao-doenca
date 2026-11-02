@@ -1,7 +1,7 @@
 #ifndef PARAMETROS_H
 #define PARAMETROS_H
 
-#define I 10 // Constante para definir a quantidade de repetições de uma simulação
+#define I 10000000 // Constante para definir a quantidade de repetições de uma simulação
 
 typedef struct parametros {
     int N;

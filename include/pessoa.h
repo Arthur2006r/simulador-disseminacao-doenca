@@ -3,10 +3,14 @@
 
 typedef struct pessoa Pessoa;
 
-Pessoa *cria_pessoa(char nome[], int id, int idade);
+Pessoa *pessoa_cria(const char *nome, int id, int idade);
+Pessoa *pessoa_copia(Pessoa *p);
+void pessoa_libera(Pessoa *p);
 
-int verifica_prioridade(const Pessoa *p1, const Pessoa *p2);
+int get_id(Pessoa *p);
+int get_idade(Pessoa *p);
+const char *get_nome(Pessoa *p);
 
-int get_id(const Pessoa *p);
+int verifica_prioridade(Pessoa *p1, Pessoa *p2);
 
 #endif
